@@ -446,7 +446,7 @@ export default function DiwaliFest() {
         {activeTab === "home" && (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="lg:col-span-2 bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
-              <h2 className="text-4xl font-bold mb-4 text-center lg:text-left">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center lg:text-left">
                 Welcome to the Fest! 🎉
               </h2>
               <p className="text-center lg:text-left text-lg text-yellow-200 mb-6">
@@ -498,7 +498,7 @@ export default function DiwaliFest() {
               </div>
             </div>
             <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
-              <h2 className="text-3xl font-bold mb-6 text-center">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center">
                 Leaderboard 🏆
               </h2>
               <div className="space-y-3">
@@ -534,7 +534,7 @@ export default function DiwaliFest() {
 
         {activeTab === "confessions" && (
           <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
-            <h2 className="text-3xl font-bold mb-2 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-center">
               Diwali Confession Wall 🤫
             </h2>
             <p className="text-center text-yellow-200 mb-6">
@@ -584,7 +584,7 @@ export default function DiwaliFest() {
 
         {activeTab === "aiGenerator" && (
           <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 text-center">
-            <h2 className="text-3xl font-bold mb-2">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-2">
               AI Diwali Wish Generator 🤖
             </h2>
             <p className="text-yellow-200 mb-6">
@@ -626,7 +626,7 @@ export default function DiwaliFest() {
 
         {activeTab === "rangoli" && (
           <div className="bg-gradient-to-br from-amber-50 via-rose-50 to-orange-100 rounded-3xl p-8 border border-amber-200 shadow-xl transition-all duration-300">
-            <h2 className="text-3xl font-semibold mb-6 text-center text-rose-700 font-serif tracking-wide drop-shadow-sm">
+            <h2 className="text-3xl sm:text-4xl font-semibold mb-6 text-center text-rose-700 font-serif tracking-wide drop-shadow-sm">
               Diwali Digital Rangoli 🪔
             </h2>
 
@@ -645,7 +645,7 @@ export default function DiwaliFest() {
               ))}
             </div>
 
-            <div className="grid grid-cols-16 gap-1 max-w-xl mx-auto bg-white/40 p-3 rounded-2xl backdrop-blur-sm shadow-inner">
+            <div className="grid grid-cols-16 gap-1 max-w-xs sm:max-w-xl mx-auto bg-white/40 p-3 rounded-2xl backdrop-blur-sm shadow-inner">
               {rangoliPixels.map((color, i) => (
                 <button
                   key={i}
@@ -663,7 +663,7 @@ export default function DiwaliFest() {
 
         {activeTab === "quiz" && (
           <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
-            <h2 className="text-3xl font-bold mb-6 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center">
               The Ultimate Diwali Meme Quiz 🏆
             </h2>
             <div className="max-w-2xl mx-auto">
@@ -704,7 +704,7 @@ export default function DiwaliFest() {
                           <button
                             key={i}
                             onClick={() => answerQuiz(i)}
-                            className="w-full p-4 bg-white/10 hover:bg-white/20 rounded-lg text-left transition-all border border-white/20 hover:border-yellow-400 transform hover:scale-105"
+                            className="w-full p-4 bg-white/10 hover:bg-white/20 rounded-lg text-left transition-all border border-white/20 hover:border-yellow-400 transform hover:scale-105 active:scale-95"
                           >
                             {option}
                           </button>
